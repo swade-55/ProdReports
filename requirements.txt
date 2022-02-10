@@ -1,9 +1,8 @@
-streamlit==0.61.0
-pandas==0.25.3
-numpy==1.18.1
-matplotlib
-datetime
-openpyxl
-pyxlsb
+streamlit== 1.4.0
+pandas==1.3.5
+numpy==1.22.1
+matplotlib == 3.5.1
+openpyxl == 3.0.9
+pyxlsb == 1.0.9
 
 
