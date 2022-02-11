@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import xlsxwriter
 from io import BytesIO
 from pyxlsb import open_workbook as open_xlsb
 from datetime import datetime, timedelta
