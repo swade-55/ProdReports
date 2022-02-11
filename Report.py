@@ -260,9 +260,9 @@ if check1:
     def to_excel(df,df1,df2):
         output = BytesIO()
         writer = pd.ExcelWriter(output, engine='xlsxwriter')
-        df.to_excel(writer, index=True, sheet_name='Sheet1')
-        df1.to_excel(writer, index=True, sheet_name='Sheet2')
-        df2.to_excel(writer, index=True, sheet_name='Sheet3')
+        df.to_excel(writer, index=True, sheet_name='Forks')
+        df1.to_excel(writer, index=True, sheet_name='Selectors')
+        df2.to_excel(writer, index=True, sheet_name='Loaders')
         workbook = writer.book
         #worksheet = writer.sheets['Sheet1']
         format1 = workbook.add_format({'num_format': '0.00'}) 
@@ -271,7 +271,7 @@ if check1:
         processed_data = output.getvalue()
         return processed_data
     df_xlsx = to_excel(forkpiv,selectors,loaders)
-    st.download_button(label='📥 Download Current Result', data=df_xlsx ,file_name= 'df_test.xlsx')
+    st.download_button(label='📥 Download Current Result', data=df_xlsx ,file_name= 'RobiProdReport.xlsx')
 
         
 
