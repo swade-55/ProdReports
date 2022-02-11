@@ -4,5 +4,5 @@ numpy==1.22.1
 matplotlib == 3.5.1
 openpyxl == 3.0.9
 pyxlsb == 1.0.9
-
+XlsxWriter == 3.0.2
 
